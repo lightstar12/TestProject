@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/txtServiceState"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="서비스 상태"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnServiceOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="서비스 시작" />
+
+        <Button
+            android:id="@+id/btnServiceOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="서비스 종료" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtLatlng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="좌표" />
+
+    <TextView
+        android:id="@+id/txtInOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="들어옴 / 나옴"
+        android:textAlignment="center" />
+</LinearLayout>
